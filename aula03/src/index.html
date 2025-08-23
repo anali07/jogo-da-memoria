@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> JOGO DA MEMÓRIA </title>
+        <!-- styles -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <!-- templates -->
+        <template id="cardTemplate"> 
+            <div class="flip-card"> 
+                <div class="flip-Card-Inner">
+                    <div class="flip-card-front"> </div>
+                    <div class="flip-card-back">
+                        <img src="./images/heros/card01.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- board -->
+        <div id="board" class="hidden"></div>
+
+        <!-- menu -->
+        <div id="menu"> 
+            <h1> Memória Do Herói </h1>
+            <div class="container"> 
+                <Select name="numCards" id="numCards"> 
+                    <option value="16">  "16"  </option>
+                    <option value="32">  "32"  </option>
+                    <option value="64">  "64"  </option>
+                    <option value="100"> "100 "</option>
+                </Select>
+                <button id="start"> start </button>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
